@@ -16,8 +16,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
     <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
         .access-point1 {
@@ -36,6 +39,8 @@
 </head>
 
 <body>
+
+
     <div name="site header" style="text-align: center; background-color: lightgray; border-bottom: 2px solid black;">
         <!-- <div class="py-5"> 
             <div class="container">-->
@@ -59,6 +64,7 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button> -->
+
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -82,15 +88,17 @@
                     </nav>
                 </div>
                 <div class="col-md-5">
-                    <div class="py-1"></div>
+                    <div class="py-2"></div>
                     <h3 style="text-align: right;">
                         Welcome, Fred
                     </h3>
                     <div class="py-1">
-                        <h6 style="text-align: right;">
-                            0 items in your shopping cabinet.
-                            <img src="images/wardrobe.png" alt="cabinet" style="width: 50px;height: 50px;" />
-                        </h6>
+                        <!-- <h6 style="text-align: right;">
+                            {{countitem}} items in your shopping cabinet.
+                            <a href="#" v-on:click="ShowMyCart"><img src="images/wardrobe.png" alt="cabinet"
+                                    style="width: 50px;height: 50px;" />
+                            </a>
+                        </h6> -->
                     </div>
                 </div>
                 <div class="col-md-1">
@@ -101,165 +109,159 @@
             </div>
         </div>
     </div>
-    <div name="site nav">
-        <div class="py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="py-1"></div>
-                        <h1 class="jumbotron-heading" style="color: black; margin-left: 1em; font-weight: bold;">Best Seller</h1>
-                        <div class="py-1"></div>
-                        <img class="d-block w-100" src="images/promo1.jpg" />
-                    </div>
-                    <div class="col-md-7">
-                        <!-- col-md-6  -->
-                        
-                        <div class="py-4"></div>
-                        <h2 class="jumbotron-heading" style="color: black; margin-left: 1em;">National Team Jersey</h2>
-            
-                            
-                        <p class="lead">
-                            Something short and leading about the collection below—its contents, the creator, etc.
-                            Make it short and sweet, but not too short so folks don't simply skip over it entirely.
-                        </p>
-                        <h2 class="jumbotron-heading" style="color: blue;">900 THB
-                            <button type="button" class="btn btn-success"><i class="fa fa-shopping-cart fa-fw"></i>&nbsp;Buy</button>
-                        </h2>
-                        <h3 style="color: blue;">Rating   
-                            <img src="images/star-yes.png" alt="star1" style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
-                            <img src="images/star-yes.png" alt="star2" style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
-                            <img src="images/star-yes.png" alt="star3" style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
-                            <img src="images/star-yes.png" alt="star4" style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
-                            <img src="images/star-no.png" alt="star5" style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
-                        </h3>
-                    
-                    </div>
-                </div>
-            </div>
+    <div id="app">
+        <div class="py-1">
         </div>
-    </div>
-    <div name="site category" style="text-align: left; background-color: gray;">
-        <div class="py-4">
-            <div class="container">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#" style="color: black;">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="#" style="color: black;">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#" style="color: black;">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#" style="color: black;">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#" style="color: black;">Next</a></li>
-                    </ul>
-                </nav>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card" style="width: auto; background-color: whitesmoke;">
-                            <img class="card-img-top" src="images/cat01.jpg" alt="Card image cap" />
-                            <div class="card-body">
-                                <h3 class="jumbotron-heading" style="margin-left: 0.5em; color: goldenrod;">
-                                    Football
-                                </h3>
-                                <h5 style="margin-left: 1.5em; color: gray">
-                                    World Cup Season
-                                </h5>
-                                <button type="button" class="btn btn-dark float-right" style="margin-top: -0.5em;">View</button>
-                            </div>
+        <div class="container" style="z-index: 1; position:relative">
+            <h5 style="text-align: right;">
+                {{countitem}} item in your shopping cabinet.
+                <a href="#" v-on:click="ShowMyCart">
+                    <img src="images/wardrobe.png" alt="cabinet" style="width: 50px;height: 50px;" />
+                </a>
+            </h5>
+        </div>
+        <div name="site nav" style="margin-top: -50px;">
+            <div class="py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="py-1"></div>
+                            <h1 class="jumbotron-heading" style="color: black; margin-left: 1em; font-weight: bold;">
+                                <a href="#" v-on:click="ShowHomePage" style="color:black">
+                                    Best
+                                    Seller
+                            </h1></a>
+                            <div class="py-1"></div>
+                            <img class="d-block w-100" src="images/promo1.jpg" />
                         </div>
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: auto; background-color: whitesmoke;">
-                            <img class="card-img-top" src="images/maincat02.jpg" alt="Card image cap" />
-                            <div class="card-body">
-                                <h3 class="jumbotron-heading" style="margin-left: 0.5em; color: goldenrod;">
-                                    Running
-                                </h3>
-                                <h5 style="margin-left: 1.5em; color: gray">
-                                    New Arrival 
-                                </h5>
-                                <button type="button" class="btn btn-dark float-right" style="margin-top: -0.5em;">View</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: auto; background-color: whitesmoke;">
-                            <img class="card-img-top" src="images/maincat03.jpg" alt="Card image cap" />
-                            <div class="card-body">
-                                <h3 class="jumbotron-heading" style="margin-left: 0.5em; color: goldenrod;">
-                                    Tennis
-                                </h3>
-                                <h5 style="margin-left: 1.5em; color: gray">
-                                    11.11 - On Sale 
-                                </h5>
-                                <button type="button" class="btn btn-dark float-right" style="margin-top: -0.5em;">View</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-2"></div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card" style="width: auto; background-color: whitesmoke;">
-                            <img class="card-img-top" src="images/maincat04.jpg" alt="Card image cap" />
-                            <div class="card-body">
-                                <h3 class="jumbotron-heading" style="margin-left: 0.5em; color: goldenrod;">
-                                    Badminton
-                                </h3>
-                                <h5 style="margin-left: 1.5em; color: gray">
-                                    11.11 On Sale
-                                </h5>
-                                <button type="button" class="btn btn-dark float-right" style="margin-top: -0.5em;">View</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: auto; background-color: whitesmoke;">
-                            <img class="card-img-top" src="images/maincat05.jpg" alt="Card image cap" />
-                            <div class="card-body">
-                                <h3 class="jumbotron-heading" style="margin-left: 0.5em; color: goldenrod;">
-                                    Fitness
-                                </h3>
-                                <h5 style="margin-left: 1.5em; color: gray">
-                                    New Arrival 
-                                </h5>
-                                <button type="button" class="btn btn-dark float-right" style="margin-top: -0.5em;">View</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="width: auto; background-color: whitesmoke;">
-                            <img class="card-img-top" src="images/maincat06.jpg" alt="Card image cap" />
-                            <div class="card-body">
-                                <h3 class="jumbotron-heading" style="margin-left: 0.5em; color: goldenrod;">
-                                    Basketball
-                                </h3>
-                                <h5 style="margin-left: 1.5em; color: gray">
-                                    New Arrival 
-                                </h5>
-                                <button type="button" class="btn btn-dark float-right" style="margin-top: -0.5em;">View</button>
-                            </div>
+                        <div class="col-md-7">
+                            <!-- col-md-6  -->
+
+                            <div class="py-4"></div>
+                            <h2 class="jumbotron-heading" style="color: black; margin: 1em;">Thailand National Football
+                                Team
+                                Jersey
+                            </h2>
+
+
+                            <p class="lead">
+                                Something short and leading about the collection below—its contents, the creator,
+                                etc.
+                                Make it short and sweet, but not too short so folks don't simply skip over it
+                                entirely.
+                            </p>
+                            <h2 class="jumbotron-heading" style="color: blue;">900 THB
+                                <!-- <button type="button" class="btn btn-success"><i
+                                        class="fa fa-shopping-cart fa-fw"></i>&nbsp;Buy</button> -->
+                            </h2>
+                            <h3 style="color: blue;">Rating
+                                <img src="images/star-yes.png" alt="star1"
+                                    style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
+                                <img src="images/star-yes.png" alt="star2"
+                                    style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
+                                <img src="images/star-yes.png" alt="star3"
+                                    style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
+                                <img src="images/star-yes.png" alt="star4"
+                                    style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
+                                <img src="images/star-no.png" alt="star5"
+                                    style="width: 20px;height: 20px; margin-bottom: 0.2em;" />
+                            </h3>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div name="site category" style="text-align: left; background-color: gray;">
+            <div class="py-4">
+                <!-- <div class="container" style="margin-top : 30px;" v-if="product_page"> -->
 
 
+
+                <div class="container">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#" style="color: black;">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#" style="color: black;">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#" style="color: black;">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#" style="color: black;">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#" style="color: black;">Next</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="row" v-if="product_page">
+                        <div class="home container">
+                            <div class="row">
+                                <div class="col-md-12 pt-5">
+                                    <div class="row equal row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4"
+                                        style="margin-top: -40px ;">
+                                        <Product v-on:add-item="addItem" v-on:remove-item="removeItem"
+                                            v-for="product in products" :product="product" :key="product.id"
+                                            style="margin-bottom: 20px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container" style="margin-top : 30px; color: whitesmoke;" v-if="cart_page">
+                        <h3 style="font-weight: bold;">My Cart -----------------------</h3>
+                        <hr />
+                        <div class="home container">
+                            <div class="row">
+                                <div class="col-md-12 pt-5">
+                                    <CartItem v-for="item in cart" :item="item" :key="item.id"></CartItem>
+                                </div>
+                                <h4>Total Price: {{calcPrice}} THB</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
 
     </div>
+
+
     <div name="site footer" class="access-point2">
         <div class="py-1"></div>
         <div class="container">
             <p>
                 Triple A sports jersey online store <br>
-                
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore
+                eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt
+                mollit
+                anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                beatae
+                vitae
+                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                fugit,
+                sed
+                quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                qui
+                dolorem
                 ipsum quia dolor sit amet, consectetur, adipisci velit.
             </p>
             <h6 style="text-align: left;">
@@ -269,6 +271,9 @@
         </div>
     </div>
 
+
+
+    <!-- </div> -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -276,6 +281,209 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
+    <template id="product-template">
+        <div class="col md-4">
+            <div class="card" style="width: auto; background-color: whitesmoke;">
+                <img :src="product.url" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="jumbotron-heading" style="margin-left: 0.5em; color: goldenrod;">{{product.name}}
+                    </h3>
+                    <h5 style="margin-left: 1.5em; color: gray">
+                        {{product.price}} THB
+                        <br />
+                        <small>
+                            {{product.shortdesc}}
+                        </small>
+                    </h5>
+                    <button @click="addToCart()" class="btn btn-success btn-lg float-center"
+                        style="margin-left: 2em;">Add</button>
+                    <button @click="removeFromCart()" class="btn btn-dark float-right">Remove</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="cartitem-template">
+        <div>
+            <h5>
+                {{item.name}} - {{item.count}}
+            </h5>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- <script src="https://unpkg.com/vuex@4.0.0/dist/vuex.global.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        let app = Vue.createApp({
+
+            data: function () {
+                return {
+
+                    product_page: true,
+                    cart_page: false,
+
+                    products: [{
+                        id: 1,
+                        name: "Football jerseys",
+                        price: 700,
+                        shortdesc: "World Cup Season",
+                        url: "images/cat01.jpg"
+                    }, {
+                        id: 2,
+                        name: "Running jerseys",
+                        price: 400,
+                        shortdesc: "New Arrival",
+                        url: "images/maincat02.jpg"
+                    }, {
+                        id: 3,
+                        name: "Tennis jerseys",
+                        price: 800,
+                        shortdesc: "11.11 - On Sale",
+                        url: "images/maincat03.jpg"
+                    }, {
+                        id: 4,
+                        name: "Badminton shirts",
+                        price: 350,
+                        shortdesc: "11.11 On Sale",
+                        url: "images/maincat04.jpg"
+                    }, {
+                        id: 5,
+                        name: "Fitness wear",
+                        price: 250,
+                        shortdesc: "New Arrival",
+                        url: "images/maincat05.jpg"
+                    }, {
+                        id: 6,
+                        name: "Basketball jerseys",
+                        price: 300,
+                        shortdesc: "New Arrival",
+                        url: "images/maincat06.jpg"
+                    }],
+
+                    cart: []
+                }
+            },
+
+            mounted: function () {
+
+            },
+
+            methods: {
+                addItem: function (id) {
+                    console.log(this.products)
+                    console.log(id)
+
+                    //Check if this product already in the cart
+                    item = this.cart.find(product => product.id == id)
+
+                    if (item) { // if this product already in the cart
+                        item.count += 1
+                    } else {
+                        item = this.products.find(product => product.id == id)
+                        this.cart.push({
+                            id: item.id,
+                            name: item.name,
+                            price: item.price,
+                            count: 1
+                        })
+                    }
+                    console.log(this.cart)
+                },
+
+                removeItem: function (id) {
+                    console.log(this.products)
+                    console.log(id)
+
+                    //Check if this product already in the cart
+                    item = this.cart.find(product => product.id == id)
+
+                    if (item) { // if this product already in the cart
+                        item.count -= 1
+                        if (item.count < 1) {
+                            for (var i = 0; i < this.cart.length; i++) {
+                                product = this.cart[i];
+                                if (product.id == item.id) {
+                                    this.cart.splice(i, 1)
+                                    break
+                                }
+                            }
+                        }
+                    } /*else {
+                        item = this.products.find(product => product.id == id)
+                        this.cart.push({
+                            id: item.id,
+                            name: item.name,
+                            count: 1
+                        })
+                    }*/
+
+                    console.log(this.cart)
+                },
+
+                ShowMyCart: function () {
+                    this.cart_page = true
+                    this.product_page = false
+                },
+
+                ShowHomePage: function () {
+                    this.product_page = true
+                    this.cart_page = false
+                }
+            },
+
+            computed: {
+                countitem: function () {
+                    var total = 0
+                    for (i in this.cart) {
+                        total += this.cart[i].count
+                    }
+                    return total
+                },
+
+                calcPrice: function () {
+                    var price = 0
+                    for (var i = 0; i < this.cart.length; i++) {
+                        product = this.cart[i];
+                        price += product.price * product.count
+                    }
+                    return price
+                }
+            }
+
+        })
+
+        app.component('Product', {
+            data: function () {
+                return {}
+            },
+            props: ['product'],
+            template: "#product-template",
+
+            methods: {
+                addToCart: function () {
+                    this.$emit("add-item", this.product.id)
+                },
+                removeFromCart: function () {
+                    this.$emit("remove-item", this.product.id)
+                }
+
+            },
+        });
+
+        app.component('Cartitem', {
+            props: ['item'],
+            template: '#cartitem-template',
+        });
+
+        app.mount("#app")
+
+    </script>
 
 </body>
 
